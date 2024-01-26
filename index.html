@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Janken</title>
+  <style>
+  
+  *{
+    margin : 0;
+    padding: 0;
+  }
+  body{
+    height: 100vh;
+    width : 100vw;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container{
+    height: 95vh;
+    width : 95vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background-color: #141414;
+  }
+  h1, .skor, p{
+    vertical-align: middle;
+    text-align: center;
+  }
+  h1{
+    height: 4rem;
+    line-height: 4rem;
+    background-color: #222;
+  }
+  .skor{
+    margin: 0.5rem 7rem;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #333;
+  }
+  p{
+    padding: 1.5rem;
+  }
+  span{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  span button:nth-child(1){
+    background-color: blue;
+    border: 0.2rem solid midnightblue;
+  }
+  span button:nth-child(2){
+    color: black;
+    background-color: white;
+    border: 0.2rem solid gray;
+  }
+  span button:nth-child(3){
+    background-color: crimson;
+    border: 0.2rem solid darkred;
+  }
+  button{
+    width : 5rem;
+    height: 3rem;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 0.75rem;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>
+    JanKenPo
+  </h1>
+  <div class="skor">0 : 0</div>
+  <p>Pilih salah satu dari pilihan dibawah ini</p>
+  <span>
+    <button onclick='batu()'>Batu</button>
+    <button onclick='kertas()'>Kertas</button>
+    <button onclick='gunting()'>Gunting</button>
+  </span>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
